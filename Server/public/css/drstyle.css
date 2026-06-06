@@ -1,0 +1,127 @@
+:root {
+--PrimaryColor: #234281;
+  --PrimaryColorDark: color-mix(in srgb, var(--PrimaryColor) 50%, #000 40%);
+  --PrimaryColorLight: color-mix(in srgb, var(--PrimaryColor) 80%, #fff 20%);
+  --AccentColor: #8c3233;
+}
+
+.table_main {
+  width: 100%;
+  overflow: auto;
+}
+
+.table_main table {
+  border-radius: 30px;
+}
+
+.table-header {
+  background-color: var(--PrimaryColor);
+  color: #fff;
+  height: 4rem;
+  text-align: center;
+}
+
+.table-header:first-child {
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+}
+
+.table_main {
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.container-wrapper {
+  margin-inline: 5vw;
+}
+
+.table {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+.table-header .table-row-header:hover {
+  background-color: var(--PrimaryColorDark);
+}
+
+.table > thead {
+  vertical-align: middle !important;
+}
+
+.table-header:first-child tr th {
+  height: 50px;
+}
+
+/* Only first header row */
+.table thead tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.table thead tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+.table thead tr th {
+  border: none !important;
+}
+
+.table tbody tr {
+  text-wrap: nowrap !important;
+}
+
+.table tbody tr {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.table tbody td {
+  padding: 15px;
+}
+
+/* Optional: bottom rounded corners if data exists */
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+/* Increase filter row height */
+.filter-row th {
+  background: #f5f6f8;
+  padding: 14px 10px;
+  /* increase vertical spacing */
+}
+
+/* Increase input & select height */
+.filter-row input,
+.filter-row select {
+  height: 42px;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.filter-row input,
+.filter-row select {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  background-color: #f1f0f0;
+}
+
+.filter-row .btn_primary {
+  background: var(--PrimaryColor);
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+.filter-row .btn_primary:hover {
+  background: var(--PrimaryColorDark);
+}
+
+.custom_label {
+  color: #000000 !important;
+}
